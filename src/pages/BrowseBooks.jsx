@@ -4,7 +4,10 @@ import BookCard from '../components/BookCard'
 import Header from '../components/Header'
 import SearchBar from '../components/SearchBar'
 
-function BrowseBooks() {
+function BrowseBooks({book}) {
+
+  // Search Function
+
   return (
     <>
       <Header/>
