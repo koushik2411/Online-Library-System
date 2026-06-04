@@ -5,13 +5,13 @@ function SearchBar() {
     const [search, setSearch] = useState("");
 
     return (
-        <div className=" p-3">
+        <div className=" w-full p-3 flex items-center justify-center">
             <input
                 type="text"
                 value={search}
                 onChange={(e)=> setSearch(e.target.value)}
                 placeholder="Search book by name"
-                className=" border py-1 px-2 rounded"
+                className=" border w-10/12 py-1 px-2 rounded"
             />
         </div>
     )

@@ -1,3 +1,4 @@
+import CategoryList from "../components/CategoryList"
 import Header from "../components/Header"
 import SearchBar from "../components/SearchBar"
 
@@ -11,6 +12,8 @@ function Home() {
             </h1>
 
             <SearchBar/>
+
+            <CategoryList/>
 
         </section>
     )
