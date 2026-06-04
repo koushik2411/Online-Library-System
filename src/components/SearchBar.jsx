@@ -1,8 +1,4 @@
-import { useState } from "react"
-
-function SearchBar() {
-
-    const [search, setSearch] = useState("");
+function SearchBar({search, setSearch}) {
 
     return (
         <div className=" w-full p-3 flex items-center justify-center">
