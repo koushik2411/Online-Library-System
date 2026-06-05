@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import FloatingBtn from "../components/FloatingBtn";
+import AddBook from "./AddBook";
 
 function BrowseBooks() {
   const { category } = useParams();
@@ -27,9 +29,16 @@ function BrowseBooks() {
     );
   }
 
+  // Add Book Modal
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <Header />
+
+      <FloatingBtn onClick={()=> setShowModal(true)}/>
+      <AddBook isOpen={showModal} onClose={()=> setShowModal(false)}/>
+
       <SearchBar search={search} setSearch={setSearch} />
 
       {filteredBooks.length === 0 ? (

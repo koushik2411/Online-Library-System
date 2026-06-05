@@ -10,19 +10,11 @@ const bookSlice = createSlice({
 
     reducers: {
         addBook: (state, action) => {
-            state.books.push(action.payload);
+            state.books.unshift(action.payload);
         },
-
-        deleteBook: (state, action) => {
-            state.books.pop();
-        },
-
-        clearCart: (state,action) => {
-            state.books.length = 0;
-        }
     }
 })
 
-export const {addBook, deleteBook, clearCart} = bookSlice.actions;
+export const {addBook} = bookSlice.actions;
 
 export default bookSlice.reducer;
