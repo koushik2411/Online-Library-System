@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function BookCard({ book }) {
   return (
-    <Link>
+    <Link to="/book/:id">
       <div className=" border h-full w-full p-2 flex flex-col items-center justify-center gap-3 rounded hover:scale-[1.02] transition">
         <img />
 

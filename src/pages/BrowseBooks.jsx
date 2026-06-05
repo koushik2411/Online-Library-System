@@ -33,7 +33,7 @@ function BrowseBooks() {
       <SearchBar search={search} setSearch={setSearch} />
 
       {filteredBooks.length === 0 ? (
-        <p>No Books Found</p>
+        <p className=" h-full w-full pt-10 text-center font-semibold text-red-600">No Books Found</p>
       ) : (
         <main className=" w-full max-w-250 p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-3">
           {filteredBooks.map((book) => (
