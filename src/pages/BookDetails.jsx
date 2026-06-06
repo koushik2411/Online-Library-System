@@ -39,7 +39,7 @@ function BookDetails() {
         <img 
           src={book.image}
           alt={book.title}
-          className=" w-[35%] border"
+          className=" w-[35%] rounded"
         />
 
         <div className=" w-full p-3 flex flex-col gap-5 items-center">

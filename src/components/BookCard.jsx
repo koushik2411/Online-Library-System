@@ -6,8 +6,12 @@ import { Link } from "react-router-dom";
 function BookCard({ book }) {
   return (
     <Link to={`/book/${book.id}`}>
-      <div className=" border h-full w-full p-2 flex flex-col items-center justify-center gap-3 rounded hover:scale-[1.02] transition">
-        <img />
+      <div className=" border h-full w-full p-3 flex flex-col items-center justify-between gap-3 rounded hover:scale-[1.02] transition">
+        <img 
+          src={book.image}
+          alt={book.title}
+          className=" h-100 rounded"
+        />
 
         <h2 className=" text-lg font-semibold text-center">{book.title}</h2>
 
@@ -28,7 +32,7 @@ function BookCard({ book }) {
         <button
           className=" border py-1 px-2 rounded"
         >
-            Add to cart
+            View details
         </button>
       </div>
     </Link>

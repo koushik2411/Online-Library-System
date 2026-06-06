@@ -2,7 +2,7 @@ const booksData = [
     {
         id: 1,
         title: "The Jungle Book",
-        image: "",
+        image: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f673b2125994569.6128b678575c9.jpg",
         category: "Children",
         author: "Rudyard Kipling",
         publishYear: "1894",
@@ -13,7 +13,7 @@ const booksData = [
     {
          id: 2,
          title: "Atomic Habits",
-         image: "",
+         image: "https://bookmartpk.com/cdn/shop/files/568917304621212.webp?v=1735038246",
          category: "Self-Help",
          author: "James Clear",
          publishYear: "2018",
@@ -24,7 +24,7 @@ const booksData = [
     {
          id: 3,
          title: "Dune",
-         image: "",
+         image: "https://static.wixstatic.com/media/e61731_e1fc5aa9aa3a405c94536f6692b412be~mv2.jpg/v1/fill/w_528,h_798,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e61731_e1fc5aa9aa3a405c94536f6692b412be~mv2.jpg",
          category: "Sci-Fi",
          author: "Frank Herbert",
          publishYear: "1965",
@@ -35,7 +35,7 @@ const booksData = [
     {
          id: 4,
          title: "Sherlock Holmes",
-         image: "",
+         image: "https://majesticbookclub.in/cdn/shop/files/main_8eeb9d60-9e86-4902-861a-be0fa392e6c5_1200x1200.png?v=1741693683",
          category: "Mystery",
          author: "Arthur Conan Doyle",
          publishYear: "1892",
@@ -46,7 +46,7 @@ const booksData = [
     {
          id: 5,
          title: "Malgudi Days",
-         image: "",
+         image: "https://miro.medium.com/1*LluyqL8wIfgAc5krLug2IA.jpeg",
          category: "Children",
          author: "R.K. Narayan",
          publishYear: "1943",
@@ -57,7 +57,7 @@ const booksData = [
     {
          id: 6,
          title: "The Secret",
-         image: "",
+         image: "https://static.wixstatic.com/media/dd7e61_b01016dddda7469eb96a5cfc4f2173d2~mv2.jpg/v1/fill/w_482,h_482,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/dd7e61_b01016dddda7469eb96a5cfc4f2173d2~mv2.jpg",
          category: "Self-Help",
          author: "Rhonda Byrne",
          publishYear: "2006",
@@ -68,7 +68,7 @@ const booksData = [
     {
          id: 7,
          title: "Ikigai: The Japanese Secret to a Long and Happy Life",
-         image: "",
+         image: "https://www.lowplexbooks.com/cdn/shop/files/9781786330895Ikigai-1.jpg?v=1720772750&width=1080",
          category: "Self-Help",
          author: "Héctor García and Francesc Miralles",
          publishYear: "2016",
@@ -79,7 +79,7 @@ const booksData = [
     {
          id: 8,
          title: "Project Hail Mary",
-         image: "",
+         image: "https://indianbookstore.co.in/wp-content/uploads/2025/07/upload-books-1.png",
          category: "Sci-Fi",
          author: "Andy Weir",
          publishYear: "2001",
@@ -90,7 +90,7 @@ const booksData = [
     {
          id: 9,
          title: "Neuromancer",
-         image: "",
+         image: "https://pictures.abebooks.com/inventory/31937119250.jpg",
          category: "Sci-Fi",
          author: "William Gibson",
          publishYear: "1984",
@@ -101,7 +101,7 @@ const booksData = [
     {
          id: 10,
          title: "And Then There Were None",
-         image: "",
+         image: "https://m.media-amazon.com/images/I/81oEi+spRqL.jpg",
          category: "Mystery",
          author: "Agatha Christie",
          publishYear: "1939",
@@ -112,7 +112,7 @@ const booksData = [
     {
          id: 11,
          title: "The Silent Patient",
-         image: "",
+         image: "https://gyaanstore.com/cdn/shop/files/76_19c5d4ad-4724-4c92-bd98-57cf88dc7b19.png?v=1757535829",
          category: "Mystery",
          author: "Alex Michaelides",
          publishYear: "2019",
@@ -123,7 +123,7 @@ const booksData = [
     {
          id: 12,
          title: "Matilda",
-         image: "",
+         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4bVpxSlL3RTn38RaIswbNn4jz1UqJ2mBlRw&s",
          category: "Children",
          author: "Roald Dahl",
          publishYear: "1988",
