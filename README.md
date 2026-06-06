@@ -1,16 +1,45 @@
-# React + Vite
+# Online Library System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based Online Library System that allows users to browse books, view book details, search and filter books by category, and add new books dynamically using Redux Toolkit.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Home Page
+* Welcome line for user
+* Book categries display
+* Popular Books section
 
-## React Compiler
+# Browse Books
+* View all available books
+* Search books by title (name)
+* Filter books by category
+* Total books counter
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Book Details
+* View complete details of the book
 
-## Expanding the ESLint configuration
+# Add Book
+* Floating button for adding book option
+* Modal-based book creation form
+* Form validation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Not Found
+* Shows errors if you visit wrong location
+
+## Technologies Used
+* React
+* React Router DOM
+* Redux Toolkit
+* React Redux
+* Tailwind CSS
+* React Icons
+* Vite
+
+## Installation
+1. Clone the repository (git clone <repo-url>)
+2. Navigate to the project folder (cd online-library-system)
+3. Install dependencies (npm install)
+4. Start development server and open the link on browser (npm run dev)
+
+## Deployed Link
+(https://kklibrary.vercel.app)
