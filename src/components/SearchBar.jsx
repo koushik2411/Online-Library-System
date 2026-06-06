@@ -1,13 +1,13 @@
 function SearchBar({search, setSearch}) {
 
     return (
-        <div className=" w-full p-3 flex items-center justify-center">
+        <div className=" w-full my-5 p-3 flex items-center justify-center">
             <input
                 type="text"
                 value={search}
                 onChange={(e)=> setSearch(e.target.value)}
                 placeholder="Search book by name"
-                className=" border w-10/12 py-1 px-2 rounded"
+                className=" border w-9/12 py-1 px-2 rounded"
             />
         </div>
     )

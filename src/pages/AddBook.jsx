@@ -111,6 +111,8 @@ function AddBook({ isOpen, onClose }) {
         </div>
 
         <form onSubmit={handleSubmit} className=" flex flex-col gap-2">
+          
+          {/* TITLE */}
           <input
             type="text"
             name="title"
@@ -123,7 +125,8 @@ function AddBook({ isOpen, onClose }) {
           {errors.title && (
             <p className="text-red-500 text-sm">{errors.title}</p>
           )}
-
+          
+          {/* AUTHOR */}
           <input
             type="text"
             name="author"
@@ -133,6 +136,11 @@ function AddBook({ isOpen, onClose }) {
             className=" border w-full px-2 py-1 rounded"
           />
 
+          {errors.author && (
+            <p className="text-red-500 text-sm">{errors.author}</p>
+          )}
+
+          {/* CATEGORY */}
           <input
             type="text"
             name="category"
@@ -142,6 +150,11 @@ function AddBook({ isOpen, onClose }) {
             className=" border w-full px-2 py-1 rounded"
           />
 
+          {errors.category && (
+            <p className="text-red-500 text-sm">{errors.category}</p>
+          )}
+
+          {/* PUBLISH YEAR */}
           <input
             type="number"
             name="publishYear"
@@ -151,6 +164,11 @@ function AddBook({ isOpen, onClose }) {
             className=" border w-full px-2 py-1 rounded"
           />
 
+          {errors.publishYear && (
+            <p className="text-red-500 text-sm">{errors.publishYear}</p>
+          )}
+
+          {/* IMAGE */}
           <input
             type="text"
             name="image"
@@ -160,6 +178,11 @@ function AddBook({ isOpen, onClose }) {
             className=" border w-full px-2 py-1 rounded"
           />
 
+          {errors.image && (
+            <p className="text-red-500 text-sm">{errors.image}</p>
+          )}
+
+          {/* RATING */}
           <input
             type="number"
             name="rating"
@@ -169,6 +192,11 @@ function AddBook({ isOpen, onClose }) {
             className=" border w-full px-2 py-1 rounded"
           />
 
+          {errors.rating && (
+            <p className="text-red-500 text-sm">{errors.rating}</p>
+          )}
+
+          {/* DESCRIPTION */}
           <textarea
             rows="4"
             name="description"
@@ -178,6 +206,11 @@ function AddBook({ isOpen, onClose }) {
             className=" border w-full px-2 py-1 rounded resize-none"
           />
 
+          {errors.description && (
+            <p className="text-red-500 text-sm">{errors.description}</p>
+          )}
+
+          {/* DETAILED DESCRIPTION */}
           <textarea
             rows="10"
             name="detailedDesc"
@@ -187,6 +220,11 @@ function AddBook({ isOpen, onClose }) {
             className=" border w-full px-2 py-1 rounded resize-none"
           />
 
+          {errors.detailedDesc && (
+            <p className="text-red-500 text-sm">{errors.detailedDesc}</p>
+          )}
+
+          {/* SUBMIT BUTTON */}
           <button type="submit" className=" border px-2 py-1 rounded bg-linear-to-b from-blue-400 to-blue-600 text-white">
             Submit
           </button>
