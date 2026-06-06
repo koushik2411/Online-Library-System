@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import FloatingBtn from "../components/FloatingBtn";
 import AddBook from "./AddBook";
+import Footer from "../components/Footer";
 
 function BrowseBooks() {
   const { category } = useParams();
@@ -36,36 +37,39 @@ function BrowseBooks() {
     <>
       <Header />
 
-      <FloatingBtn onClick={() => setShowModal(true)} />
-      <AddBook isOpen={showModal} onClose={() => setShowModal(false)} />
+      <div className=" min-h-screen w-full pb-3 bg-zinc-300 flex flex-col items-center">
+        <FloatingBtn onClick={() => setShowModal(true)} />
+        <AddBook isOpen={showModal} onClose={() => setShowModal(false)} />
 
-      <SearchBar search={search} setSearch={setSearch} />
+        <SearchBar search={search} setSearch={setSearch} />
 
-      <div className=" w-full p-2 flex flex-col justify-center items-center">
+        <div className=" w-full max-w-300 p-3 flex flex-col justify-center items-center bg-zinc-100 rounded-lg">
+          <div className=" w-full max-w-300 flex items-center justify-between border-b-2">
+            <h2 className=" text-lg font-semibold">BOOKS</h2>
 
-        <div className=" w-full max-w-300 flex items-center justify-between border-b-2">
+            <h3>
+              Total books:{" "}
+              <span className=" font-semibold">{filteredBooks.length}</span>
+            </h3>
+          </div>
 
-          <h2 className=" text-lg font-semibold">BOOKS</h2>
-
-          <h3>
-            Total books: <span className=" font-semibold">{filteredBooks.length}</span>
-          </h3>
-        </div>
-
-        <div className=" w-full flex justify-center items-center">
-          {filteredBooks.length === 0 ? (
-            <p className=" h-full w-full pt-10 text-center font-semibold text-red-600">
-              No Books Found
-            </p>
-          ) : (
-            <main className=" w-full max-w-300 p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-3">
-              {filteredBooks.map((book) => (
-                <BookCard key={book.id} book={book} />
-              ))}
-            </main>
-          )}
+          <div className=" w-full flex justify-center items-center bg-zinc-100">
+            {filteredBooks.length === 0 ? (
+              <p className=" h-full w-full pt-10 text-center font-semibold text-red-600">
+                No Books Found
+              </p>
+            ) : (
+              <main className=" w-full max-w-300 p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-4">
+                {filteredBooks.map((book) => (
+                  <BookCard key={book.id} book={book} />
+                ))}
+              </main>
+            )}
+          </div>
         </div>
       </div>
+
+      <Footer/>
     </>
   );
 }
